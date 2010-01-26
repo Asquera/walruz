@@ -5,7 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "walruz"
-    gem.summary = %Q{Walruz is a gem that provides an easy but powerful way to implement authorization policies in a system, relying on the composition of simple policies to create more complex ones.}
+    gem.summary = %Q{Walruz is a gem that provides an easy yet powerful way to implement authorization policies in a system, relying on the composition of simple policies to create more complex ones.}
+    gem.description = %Q{
+      Walruz provides an easy to use DSL to do composition of basic authorization policies to create
+    more complex ones, and then register this composed policies on actions performed to the model begin accessed
+    }
     gem.email = "roman@noomi.com"
     gem.homepage = "http://github.com/noomii/walruz"
     gem.authors = ["Roman Gonzalez"]
