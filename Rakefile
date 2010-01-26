@@ -11,13 +11,17 @@ begin
     gem.authors = ["Roman Gonzalez"]
     gem.rubyforge_project = "walruz"
     gem.has_rdoc = 'yard'
+
+    gem.add_development_dependency("rspec")
+    gem.add_development_dependency("yard")
   
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   
-  Jeweler::RubyforgeTasks.new do |rubyforge|
-    rubyforge.doc_task = "yardoc"
-  end
+  Jeweler::GemcutterTasks.new
+  #Jeweler::RubyforgeTasks.new do |rubyforge|
+  #  rubyforge.doc_task = "yardoc"
+  #end
   
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
