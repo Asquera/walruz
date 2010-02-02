@@ -2,6 +2,7 @@ module Walruz
 
   base_path = File.dirname(__FILE__)
   require base_path + '/walruz/exceptions'
+  autoload :Config, base_path + '/walruz/config'
   autoload :Memoization, base_path + '/walruz/core_ext/memoization'
   autoload :Manager, base_path + '/walruz/manager'
   autoload :Actor,   base_path + '/walruz/actor'
