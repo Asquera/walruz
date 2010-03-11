@@ -1,4 +1,4 @@
-= Walruz: Simple but Powerful Authorization Framework
+= Walruz: Simple yet Powerful Policy Composition Authorization Framework
 
 == Basic and Terminology
 

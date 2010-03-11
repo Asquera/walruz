@@ -23,9 +23,7 @@ begin
   end
   
   Jeweler::GemcutterTasks.new
-  #Jeweler::RubyforgeTasks.new do |rubyforge|
-  #  rubyforge.doc_task = "yardoc"
-  #end
+  Jeweler::RubyforgeTasks.new 
   
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

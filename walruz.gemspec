@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Gonzalez"]
-  s.date = %q{2010-01-25}
+  s.date = %q{2010-03-11}
   s.description = %q{
       Walruz provides an easy to use DSL to do composition of basic authorization policies to create
     more complex ones, and then register this composed policies on actions performed to the model begin accessed
