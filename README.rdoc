@@ -1,5 +1,9 @@
 = Walruz: Simple yet Powerful Policy Composition Authorization Framework
 
+== Rails Integration
+
+See walruz-rails[http://github.com/noomii/walruz-rails] gem.
+
 == Basic and Terminology
 
 Walruz facilitates the separation between the authorization process on the business logic and the actions executed after the validation of the authorizations. To understand how it works, we will follow the following terminology:
@@ -260,10 +264,6 @@ You'll notice that once you start implementing policies for your system, you'll 
 - Use <tt>PolicyClass.but_for</tt> when you are combining the <em>policy</em> class with other policies, if you are not doing this, consider checking authorizations on parents of the <em>subject</em> instead of the <em>subject</em> (e.g. <tt>current_user.can?(:see_pictures_of, picture.owner)</tt>)
 
 If you follow this rules, it will be much easier for you to merge policies together in an efficient way.
-
-== Rails Integration
-
-See walruz-rails[http://github.com/noomii/walruz-rails] gem.
 
 == More examples
 
