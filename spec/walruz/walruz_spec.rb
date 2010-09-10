@@ -34,7 +34,8 @@ describe Walruz do
   describe ".version" do
 
     it "should return a string representing the current version" do
-      version = YAML.load_file(File.dirname(__FILE__) + "/../../VERSION.yml")
+      require 'yaml'
+      version = ::YAML.load_file(File.dirname(__FILE__) + "/../../VERSION.yml")
       Walruz.version.should == "#{version[:major]}.#{version[:minor]}.#{version[:patch]}"
     end
 
