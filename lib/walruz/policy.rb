@@ -163,7 +163,7 @@ module Walruz
     # Returns the label assigned to the policy
     #
     def self.policy_label
-      @policy_label ||= (self.name.empty? ? nil : :"#{self.underscore(self.name)}")
+      @policy_label ||= (name.nil? ? nil : :"#{self.underscore(self.name)}")
     end
     
     #
